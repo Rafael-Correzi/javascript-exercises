@@ -17,20 +17,12 @@ const subtract = function(...numbersSubtracted) {
 };
 
 const sum = function(arr) {
-  let sum = 0;
-  for (let n of arr){
-    sum += n;
-  }
-  return sum;
+  return arr.reduce((sum, current) => sum + current, 0);
 	
 };
 
 const multiply = function(arr) {
-  let multiplication = 1;
-  for (let n of arr) {
-    multiplication *= n;
-  }
-  return multiplication;
+  return arr.reduce((multiplied, current) => multiplied * current, 1 );
 
 };
 
